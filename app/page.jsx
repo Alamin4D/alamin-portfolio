@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <motion.section initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
-      className='h-screen flex items-center'
+      className='min-h-screen flex items-center py-24 xl:py-0'
     >
       {/* pattern */}
       <Pattern />
