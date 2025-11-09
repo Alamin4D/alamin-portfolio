@@ -19,7 +19,6 @@ import { HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
 const Contact = () => {
   return (
     <motion.section initial={{ opacity: 0 }}
-    
       animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
       className='h-screen flex items-center py-24 xl:py-0'>
       <div className='container mx-auto w-full h-full flex flex-col items-center xl:justify-center xl:overflow-hidden scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible'>
