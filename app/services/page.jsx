@@ -72,7 +72,6 @@ const Services = () => {
                   <Image src={item.icon} width={48} height={48} alt="" />
                   <div className='w-12 h-12 bg-accent rounded-full flex items-center justify-center cursor-pointer text-2xl hover:rotate-45 transition-all'>
                     <MdOutlineArrowOutward />
-                    
                   </div>
                 </div>
                 <h5 className='text-[22px] font-medium max-w-[240px]'>{item.title}</h5>
