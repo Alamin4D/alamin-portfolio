@@ -57,9 +57,28 @@ const Services = () => {
           <button className='btn btn-lg btn-accent flex gap-2'>All Services <MdArrowRightAlt className='text-2xl' /></button>
         </div>
         {/* slider */}
-        <div>
-          slide
-        </div>
+        <Swiper spaceBetween={30} slidesPerView={1} breakpoints={{
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        modules={[Pagination]}
+        pagination={{ clickable: true, dynamicBullets: true }}
+        className='h-[320px]'
+        >
+          {services.map((item, index) => {
+            return <SwiperSlide key={index}>
+              <div className='bg-secondary/90 w-full h-[284px] rounded-[20px] px-[30px] py-[40px] flex flex-col justify-between'>
+                <div className='flex justify-between items-center mb-12'>
+                  <Image src={item.icon} width={48} height={48} alt="" />
+                  <div className='w-12 h-12 bg-accent rounded-full flex items-center justify-center cursor-pointer text-2xl hover:rotate-45 transition-all'>
+                    <MdOutlineArrowOutward />
+                  </div>
+                </div>
+                <h5 className='text-[22px] font-medium max-w-[240px]'>{item.title}</h5>
+              </div>
+            </SwiperSlide>
+          })}
+        </Swiper>
       </div>
     </motion.section>
   )

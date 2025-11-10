@@ -72,6 +72,10 @@ body {
 .btn-white {
   @apply bg-white hover:bg-white/90 text-primary;
 }
-/* .swiper{
+.swiper{
   margin: 0 !important;
-} */
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+ @apply bg-accent
+}

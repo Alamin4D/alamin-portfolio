@@ -28,7 +28,7 @@ const Contact = () => {
             <div className='flex-1 xl:w-[600px] flex flex-col gap-12'>
               <div>
                 <h2 className='h2 mb-6'>Get In <span className='text-accent'>Touch</span></h2>
-                <p className='max-w-[460px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className='max-w-[460px]'>Let’s connect! I’m available for web development projects, collaborations, or any tech-related discussions.</p>
               </div>
               {/* info */}
               <div className='flex flex-col gap-8 mb-6 xl:mb-0'>
