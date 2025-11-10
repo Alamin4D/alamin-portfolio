@@ -5,7 +5,8 @@ import Image from 'next/image'
 import Skills from '../components/Skills'
 import Blob from '../components/Blob'
 import Socials from '../components/Socials'
-import Testimonials from '../components/Testimonials'
+// import Testimonials from '../components/Testimonials'
+import Journey from '../components/Journey'
 
 const About = () => {
   return (
@@ -41,8 +42,8 @@ const About = () => {
               </h2>
               <p className='max-w-[540px] mb-12'>I focus on crafting visually stunning, user-friendly web experiences that not olny look great but also function seamlessly, ensuring every detail is carefully designed and executed.</p>
               <div className='flex flex-col items-start gap-16'>
-                <Testimonials />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, facere! Unde illo quod consequatur! Libero optio nisi autem voluptas perferendis ab perspiciatis, culpa quod itaque magni animi eius alias provident. Fugiat optio delectus, minus nihil expedita dolorem, aliquam tenetur accusamus et quas, in ipsum quasi numquam quam doloremque totam labore officiis ex animi. Veritatis vitae impedit excepturi earum aut eveniet corrupti natus debitis quis. Rerum tenetur, nulla culpa sit ad distinctio placeat quidem magnam optio libero quisquam possimus numquam obcaecati. Quaerat ipsa, beatae omnis ea quasi temporibus iste numquam ducimus dolore asperiores eum at vel. Error mollitia commodi quis ullam!</p>
+                {/* <Testimonials /> */}
+                <Journey />
                 <Skills />
               </div>
             </div>

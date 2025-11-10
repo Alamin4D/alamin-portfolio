@@ -61,17 +61,17 @@ const Contact = () => {
                 {/* first and last name */}
                 <div className='flex flex-col xl:flex-row gap-6 w-full'>
                   <div className='w-full'>
-                    <Label html='first_name'>First Name
+                    <Label html='name'>Name
                       <span className='text-accent'> *</span>
                     </Label>
-                    <Input name='first_name' id='first_name' placeholder='First Name' />
+                    <Input name='name' id='name' placeholder='Enter Your Name' />
                   </div>
-                  <div className='w-full'>
-                    <Label html='last_name'>First Name
+                  {/* <div className='w-full'>
+                    <Label html='last_name'>Last Name
                       <span className='text-accent'> *</span>
                     </Label>
                     <Input name='last_name' id='last_name' placeholder='Last Name' />
-                  </div>
+                  </div> */}
                 </div>
                 {/* email */}
                 <div className='w-full'>
@@ -91,8 +91,8 @@ const Contact = () => {
                     </SelectTrigger>
                     <SelectContent className='bg-black border-white/20'>
                       <SelectItem value='webdev'>Web Development</SelectItem>
-                      <SelectItem value='uiux'>UI & UX Design</SelectItem>
-                      <SelectItem value='logo'>Logo Design</SelectItem>
+                      {/* <SelectItem value='uiux'>UI & UX Design</SelectItem>
+                      <SelectItem value='logo'>Logo Design</SelectItem> */}
                     </SelectContent>
                   </Select>
                 </div>
