@@ -6,6 +6,8 @@ import RectangleTransition from "./components/RectangleTransition";
 import Gradient from "./components/Gradient";
 import Header from "./components/Header";
 
+import { Toaster } from "react-hot-toast";
+
 const SometypeMono = Sometype_Mono({
   variable: "--font-sometypeMono",
   subsets: ["latin"],
@@ -35,6 +37,7 @@ export default function RootLayout({ children }) {
             </div>
           </div>
         </PageTransition>
+        <Toaster />
       </body>
     </html>
   );

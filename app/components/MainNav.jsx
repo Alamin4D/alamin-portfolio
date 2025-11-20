@@ -9,12 +9,17 @@ const MainNav = () => {
       <div className='flex flex-col h-full items-center justify-between'>
         <Logo />
         <NavLinks containerStyles="flex flex-col gap-6" />
-        <button className='btn btn-lg btn-tertiary outline-0 mb-16'>
+
+        <a 
+          href="/resume.pdf" 
+          download
+          className='btn btn-lg btn-tertiary outline-0 mb-16'
+        >
           <div className='flex items-center gap-3'>
             <span>Download CV</span>
             <MdFileDownload className='text-xl' />
           </div>
-        </button>
+        </a>
       </div>
     </nav>
   )
